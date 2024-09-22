@@ -6,7 +6,7 @@
   "scripts": {
     "build-css": "tailwindcss -i ./src/styles.css -o ./public/styles.css",
     "dev": "tailwindcss -i ./src/styles.css -o ./public/styles.css --watch",
-    "copy-files": "rm -rf deploy && mkdir deploy && cp -r src/*.html assets public deploy",
+    "copy-files": "rm -rf deploy && mkdir deploy && cp -r src assets public deploy",
     "predeploy": "npm run build-css && npm run copy-files",
     "deploy": "gh-pages -d deploy"
   },
